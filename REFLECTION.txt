@@ -1,0 +1,19 @@
+STUDENT REFLECTION
+
+1. What part of the laboratory was easiest for you?
+The easiest part for me was customizing the content of the website because I already had a Figma design and I knew what information I wanted to include. It was easier to organize my About, Skills, Projects, and Contact sections because the plan was already clear before I started coding.
+
+2. What part was most difficult?
+The most difficult part was turning the Figma design into actual code while keeping the layout close to the original design. I also had to make sure that the navigation, responsive layout, images, and contact form still worked properly instead of only looking good.
+
+3. What did you learn about HTML, CSS, and JavaScript?
+I learned that HTML is used to organize the structure and content of the webpage, CSS controls the design and layout, and JavaScript adds behavior and interaction. I also learned why it is better to keep them in separate files because the project becomes easier to understand, edit, and troubleshoot.
+
+4. What did you learn about Git and GitHub?
+I learned that Git and GitHub are different. Git tracks the changes and commits in the project on my computer, while GitHub stores the repository online so the code can be accessed and shared. I also learned the purpose of git add, git commit, and git push in the workflow.
+
+5. What did you learn about deployment with Vercel?
+I learned that Vercel can publish a website from a GitHub repository and give it a live URL. When new changes are committed and pushed to GitHub, Vercel can create a new deployment so the live website can be updated.
+
+6. What feature would you add if you continued developing the website?
+If I continued developing the website, I would improve the project section by adding separate project pages or previews where visitors could see more details, photos, and videos from each project. I would also connect the contact form to a real service so messages could actually be sent instead of only showing a demo confirmation.
