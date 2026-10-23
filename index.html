@@ -136,15 +136,15 @@
       <div class="project-grid">
         <article class="project-card">
           <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/683b2.png" alt="HealthCore promotional video project" class="asset-image" data-fallback="HEALTHCORE PROJECT"></div>
-          <div class="project-body"><span>VIDEO EDITING · VOLUNTEER PROJECT</span><h3>HealthCore Promotional Video</h3><p>Promotional video created during my work immersion experience for HealthCore Clinics and Diagnostics.</p><a href="#contact">View Project ↗</a></div>
+          <div class="project-body"><span>VIDEO EDITING · VOLUNTEER PROJECT</span><h3>HealthCore Promotional Video</h3><p>Promotional video created during my work immersion experience for HealthCore Clinics and Diagnostics.</p><button class="project-link" type="button" data-project="healthcore">View Project ↗</button></div>
         </article>
         <article class="project-card">
           <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/72cf3.png" alt="Passionist Jubilee Youth Camp project" class="asset-image" data-fallback="PJYC PROJECT"></div>
-          <div class="project-body"><span>VIDEO PRODUCTION · CHURCH / VOLUNTEER</span><h3>Passionist Jubilee Youth Camp</h3><p>Creative promotional content produced for a youth camp event.</p><a href="#contact">View Project ↗</a></div>
+          <div class="project-body"><span>VIDEO PRODUCTION · CHURCH / VOLUNTEER</span><h3>Passionist Jubilee Youth Camp</h3><p>Creative promotional content produced for a youth camp event.</p><button class="project-link" type="button" data-project="pjyc">View Project ↗</button></div>
         </article>
         <article class="project-card">
           <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/438f4.png" alt="Student creative projects" class="asset-image" data-fallback="STUDENT PROJECTS"></div>
-          <div class="project-body"><span>DESIGN · VIDEO · ACADEMIC WORK</span><h3>Student Creative Projects</h3><p>A collection of creative work produced for school and student activities.</p><a href="#contact">View Project ↗</a></div>
+          <div class="project-body"><span>DESIGN · VIDEO · ACADEMIC WORK</span><h3>Student Creative Projects</h3><p>A collection of creative work produced for school and student activities.</p><button class="project-link" type="button" data-project="student">View Project ↗</button></div>
         </article>
         <article class="project-card">
           <div class="project-image browser-preview"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/c584e.png" alt="Personal website interface in Figma" class="asset-image" data-fallback="PERSONAL WEBSITE UI/UX"></div>
@@ -202,6 +202,18 @@
     <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
     <p>Designed by Xander Jhay Lelia · © 2026</p>
   </footer>
+
+
+  <div class="project-modal" id="projectModal" hidden aria-hidden="true">
+    <div class="project-modal-backdrop" data-close-modal></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
+      <span class="project-modal-kicker" id="projectModalKicker"></span>
+      <h2 id="projectModalTitle"></h2>
+      <p id="projectModalText"></p>
+      <a class="button" href="#contact" id="projectModalContact">Let's Talk About It →</a>
+    </div>
+  </div>
 
   <script src="script.js" defer></script>
 </body>
