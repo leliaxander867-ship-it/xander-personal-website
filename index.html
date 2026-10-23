@@ -3,218 +3,362 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Xander Jhay Lelia, a Computer Science student and creative technologist.">
-  <title>Xander Jhay Lelia | Personal Portfolio</title>
+  <title>Xander Jhay Lelia | Personal Website</title>
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Xander home">XANDER<span>.</span></a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
-    <a class="button button-small" href="#contact">Let's Talk</a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">☰</button>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+
+  <!-- Navigation -->
+  <header class="header">
+    <a href="#home" class="logo">XANDER<span>.</span></a>
+
+    <nav class="nav" id="navMenu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a href="#contact" class="small-button desktop-button">Let's Talk</a>
+
+    <button class="menu-button" id="menuButton" type="button">☰</button>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero section" id="home">
-      <div class="hero-copy">
-        <span class="eyebrow-chip">HELLO, I'M XANDER 👋</span>
-        <h1>Computer Science<br>Student &amp; <span>Creative</span><br><span>Technologist.</span></h1>
-        <p class="hero-text">I combine technology and creativity through design, video editing, and digital experiences.</p>
-        <div class="hero-actions">
-          <a class="button" href="#projects">Explore My Work →</a>
-          <a class="button button-secondary" href="#about">About Me</a>
+      <div class="hero-text-area">
+        <p class="hello">HELLO, I'M XANDER 👋</p>
+        <h1>
+          Computer Science<br>
+          Student &amp; <span>Creative</span><br>
+          <span>Technologist.</span>
+        </h1>
+
+        <p class="intro">
+          I combine technology and creativity through design, video editing,
+          and digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button">Explore My Work →</a>
+          <a href="#about" class="button secondary-button">About Me</a>
         </div>
-        <div class="tools-row">
-          <strong>TOOLS I USE</strong>
-          <span class="divider"></span>
-          <span>Figma · Canva · CapCut · Premiere Pro · After Effects</span>
-        </div>
+
+        <p class="tools">
+          <strong>TOOLS I USE</strong><br>
+          Figma · Canva · CapCut · Premiere Pro · After Effects
+        </p>
       </div>
 
-      <div class="hero-visual" aria-label="Portrait and creative interests">
-        <div class="dot-grid" aria-hidden="true"></div>
-        <div class="portrait-wrap">
-          <img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/388ab.png" alt="Portrait of Xander Jhay Lelia" class="portrait asset-image" data-fallback="XANDER PORTRAIT">
-        </div>
-        <span class="floating-tag tag-one"><i></i>Computer Science</span>
-        <span class="floating-tag tag-two"><i></i>UI/UX</span>
-        <span class="floating-tag tag-three"><i></i>Video Editing</span>
-        <span class="code-tile" aria-hidden="true">&lt;/&gt;</span>
+      <div class="hero-photo-area">
+        <img
+          src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/388ab.png"
+          alt="Portrait of Xander Jhay Lelia"
+          class="hero-photo"
+        >
+        <span class="tag tag-1">Computer Science</span>
+        <span class="tag tag-2">UI/UX</span>
+        <span class="tag tag-3">Video Editing</span>
+        <span class="code-box">&lt;/&gt;</span>
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="about section" id="about">
-      <div class="about-image frame-image">
-        <img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/64c1b.png" alt="Xander working on a creative project" class="asset-image" data-fallback="ABOUT PHOTO">
+      <div class="about-photo-box">
+        <img
+          src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/64c1b.png"
+          alt="Xander working on a creative project"
+        >
       </div>
-      <div class="about-copy">
-        <div class="section-heading">
-          <span>ABOUT ME</span>
-          <h2>A little about me.</h2>
-        </div>
-        <div class="about-paragraphs">
-          <p class="lead">I'm a first-year Computer Science student with a strong interest in technology and creative digital work.</p>
-          <p>Beyond programming, I enjoy video editing, design, photography, and videography. I like exploring how technology and creativity can work together to turn ideas into meaningful digital experiences.</p>
-        </div>
-        <div class="identity-grid">
-          <article class="identity-card">
-            <span>01</span><h3>CS Student</h3><p>Learning technology and programming.</p>
-          </article>
-          <article class="identity-card">
-            <span>02</span><h3>Creative</h3><p>Video, photography &amp; design.</p>
-          </article>
-          <article class="identity-card">
-            <span>03</span><h3>Builder</h3><p>Turning ideas into digital experiences.</p>
-          </article>
+
+      <div class="about-content">
+        <p class="section-label">ABOUT ME</p>
+        <h2>A little about me.</h2>
+
+        <p class="about-lead">
+          I'm a first-year Computer Science student with a strong interest in
+          technology and creative digital work.
+        </p>
+
+        <p class="about-description">
+          Beyond programming, I enjoy video editing, design, photography, and
+          videography. I like exploring how technology and creativity can work
+          together to turn ideas into meaningful digital experiences.
+        </p>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <small>01</small>
+            <h3>CS Student</h3>
+            <p>Learning technology and programming.</p>
+          </div>
+
+          <div class="about-card">
+            <small>02</small>
+            <h3>Creative</h3>
+            <p>Video, photography &amp; design.</p>
+          </div>
+
+          <div class="about-card">
+            <small>03</small>
+            <h3>Builder</h3>
+            <p>Turning ideas into digital experiences.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section class="skills section" id="skills">
-      <div class="section-top">
-        <div class="section-heading">
-          <span>WHAT I DO</span>
+      <div class="section-title-row">
+        <div>
+          <p class="section-label">WHAT I DO</p>
           <h2>A mix of technical learning<br>and creative experience.</h2>
         </div>
-        <p>The tools and skills I'm learning and using across school, volunteer and personal projects.</p>
+        <p class="section-description">
+          The tools and skills I'm learning and using across school, volunteer,
+          and personal projects.
+        </p>
       </div>
 
-      <div class="skill-grid">
-        <article class="skill-card">
+      <div class="skill-cards">
+        <div class="skill-card">
           <div class="skill-icon">&lt;/&gt;</div>
           <h3>Technology</h3>
-          <hr>
-          <ul><li>Programming</li><li>Web Development</li><li>Problem Solving</li></ul>
-        </article>
-        <article class="skill-card">
+          <ul>
+            <li>Programming</li>
+            <li>Web Development</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
           <div class="skill-icon">▶</div>
           <h3>Video Editing</h3>
-          <hr>
-          <ul><li>CapCut</li><li>Premiere Pro</li><li>After Effects</li></ul>
-        </article>
-        <article class="skill-card">
+          <ul>
+            <li>CapCut</li>
+            <li>Premiere Pro</li>
+            <li>After Effects</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
           <div class="skill-icon">◇</div>
           <h3>Design</h3>
-          <hr>
-          <ul><li>Figma</li><li>Canva</li><li>Visual Design</li></ul>
-        </article>
-        <article class="skill-card">
+          <ul>
+            <li>Figma</li>
+            <li>Canva</li>
+            <li>Visual Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
           <div class="skill-icon">◎</div>
           <h3>Media</h3>
-          <hr>
-          <ul><li>Photography</li><li>Videography</li><li>Content Creation</li></ul>
-        </article>
+          <ul>
+            <li>Photography</li>
+            <li>Videography</li>
+            <li>Content Creation</li>
+          </ul>
+        </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section class="projects section" id="projects">
-      <div class="section-top">
-        <div class="section-heading">
-          <span>SELECTED WORK</span>
+      <div class="section-title-row">
+        <div>
+          <p class="section-label">SELECTED WORK</p>
           <h2>Things I've worked on.</h2>
         </div>
-        <p>Volunteer, school and personal projects that helped me practice design and creative work.</p>
+        <p class="section-description">
+          Volunteer, school, and personal projects that helped me practice
+          design and creative work.
+        </p>
       </div>
 
-      <div class="project-grid">
+      <div class="project-cards">
         <article class="project-card">
-          <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/683b2.png" alt="HealthCore promotional video project" class="asset-image" data-fallback="HEALTHCORE PROJECT"></div>
-          <div class="project-body"><span>VIDEO EDITING · VOLUNTEER PROJECT</span><h3>HealthCore Promotional Video</h3><p>Promotional video created during my work immersion experience for HealthCore Clinics and Diagnostics.</p><button class="project-link" type="button" data-project="healthcore">View Project ↗</button></div>
+          <img
+            src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/683b2.png"
+            alt="HealthCore promotional video project"
+          >
+          <div class="project-content">
+            <small>VIDEO EDITING · VOLUNTEER PROJECT</small>
+            <h3>HealthCore Promotional Video</h3>
+            <p>Promotional video created during my work immersion experience for HealthCore Clinics and Diagnostics.</p>
+            <button class="project-button" type="button" onclick="showProject('healthcore')">View Project →</button>
+          </div>
         </article>
+
         <article class="project-card">
-          <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/72cf3.png" alt="Passionist Jubilee Youth Camp project" class="asset-image" data-fallback="PJYC PROJECT"></div>
-          <div class="project-body"><span>VIDEO PRODUCTION · CHURCH / VOLUNTEER</span><h3>Passionist Jubilee Youth Camp</h3><p>Creative promotional content produced for a youth camp event.</p><button class="project-link" type="button" data-project="pjyc">View Project ↗</button></div>
+          <img
+            src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/72cf3.png"
+            alt="Passionist Jubilee Youth Camp project"
+          >
+          <div class="project-content">
+            <small>VIDEO PRODUCTION · CHURCH / VOLUNTEER</small>
+            <h3>Passionist Jubilee Youth Camp</h3>
+            <p>Creative promotional content produced for a youth camp event.</p>
+            <button class="project-button" type="button" onclick="showProject('pjyc')">View Project →</button>
+          </div>
         </article>
+
         <article class="project-card">
-          <div class="project-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/438f4.png" alt="Student creative projects" class="asset-image" data-fallback="STUDENT PROJECTS"></div>
-          <div class="project-body"><span>DESIGN · VIDEO · ACADEMIC WORK</span><h3>Student Creative Projects</h3><p>A collection of creative work produced for school and student activities.</p><button class="project-link" type="button" data-project="student">View Project ↗</button></div>
+          <img
+            src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/438f4.png"
+            alt="Student creative projects"
+          >
+          <div class="project-content">
+            <small>DESIGN · VIDEO · ACADEMIC WORK</small>
+            <h3>Student Creative Projects</h3>
+            <p>A collection of creative work produced for school and student activities.</p>
+            <button class="project-button" type="button" onclick="showProject('student')">View Project →</button>
+          </div>
         </article>
+
         <article class="project-card">
-          <div class="project-image browser-preview"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/c584e.png" alt="Personal website interface in Figma" class="asset-image" data-fallback="PERSONAL WEBSITE UI/UX"></div>
-          <div class="project-body"><span>FIGMA · UI/UX DESIGN</span><h3>Personal Website UI/UX</h3><p>A personal website interface exploring layout, hierarchy, and user experience.</p><a href="https://www.figma.com/design/hPadnE6QAFTlz2KyPtHgFx" target="_blank" rel="noopener">View Figma ↗</a></div>
+          <img
+            src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/c584e.png"
+            alt="Personal website design in Figma"
+          >
+          <div class="project-content">
+            <small>FIGMA · UI/UX DESIGN</small>
+            <h3>Personal Website UI/UX</h3>
+            <p>A personal website interface exploring layout, hierarchy, and user experience.</p>
+            <button class="project-button" type="button" onclick="showProject('website')">View Project →</button>
+          </div>
         </article>
+      </div>
+
+      <!-- Simple project details box -->
+      <div class="project-details" id="projectDetails">
+        <button class="close-button" type="button" onclick="closeProject()">×</button>
+        <small id="projectCategory"></small>
+        <h3 id="projectTitle">Project Title</h3>
+        <p id="projectDescription">Project description will appear here.</p>
       </div>
     </section>
 
+    <!-- Journey Section -->
     <section class="journey section" id="journey">
-      <div class="section-heading journey-heading">
-        <span>JOURNEY</span>
+      <div>
+        <p class="section-label">JOURNEY</p>
         <h2>My journey so far.</h2>
-        <p>Still early. Still learning. Each step adds something new.</p>
+        <p class="section-description">Still early. Still learning. Each step adds something new.</p>
       </div>
-      <div class="timeline-card">
-        <article class="timeline-item"><div><span>2026 — PRESENT</span></div><div><h3>BS Computer Science</h3><p>First-Year College Student</p></div></article>
-        <article class="timeline-item"><div><span>EARLIER</span></div><div><h3>Senior High School</h3><p>STEM Strand</p></div></article>
-        <article class="timeline-item"><div><span>CREATIVE EXPERIENCE</span></div><div><h3>Video Editing &amp; Digital Media</h3><p>School, volunteer and organization projects</p></div></article>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <small>2026 — PRESENT</small>
+          <div>
+            <h3>BS Computer Science</h3>
+            <p>First-Year College Student</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <small>EARLIER</small>
+          <div>
+            <h3>Senior High School</h3>
+            <p>STEM Strand</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <small>CREATIVE EXPERIENCE</small>
+          <div>
+            <h3>Video Editing &amp; Digital Media</h3>
+            <p>School, volunteer and organization projects</p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Interests Section -->
     <section class="interests section" id="interests">
-      <div class="section-top">
-        <div class="section-heading"><span>PERSONAL INTERESTS</span><h2>Beyond the screen.</h2></div>
-        <p>A few things I enjoy creating and exploring.</p>
+      <div class="section-title-row">
+        <div>
+          <p class="section-label">PERSONAL INTERESTS</p>
+          <h2>Beyond the screen.</h2>
+        </div>
+        <p class="section-description">A few things I enjoy creating and exploring.</p>
       </div>
-      <div class="interest-grid">
-        <article class="interest-card"><div class="interest-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/d29b8.png" alt="Photography interest" class="asset-image" data-fallback="PHOTOGRAPHY"></div><span>Photography</span><p>Capturing people, places and small details.</p></article>
-        <article class="interest-card"><div class="interest-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/5e9c3.png" alt="Videography interest" class="asset-image" data-fallback="VIDEOGRAPHY"></div><span>Videography</span><p>Turning moments and stories into video.</p></article>
-        <article class="interest-card"><div class="interest-image"><img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/3dc51.png" alt="Technology interest" class="asset-image" data-fallback="TECHNOLOGY"></div><span>Technology</span><p>Learning new tools and exploring what they can do.</p></article>
+
+      <div class="interest-cards">
+        <div class="interest-card">
+          <img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/d29b8.png" alt="Photography">
+          <h3>Photography</h3>
+          <p>Capturing people, places and small details.</p>
+        </div>
+
+        <div class="interest-card">
+          <img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/5e9c3.png" alt="Videography">
+          <h3>Videography</h3>
+          <p>Turning moments and stories into video.</p>
+        </div>
+
+        <div class="interest-card">
+          <img src="https://www.figma.com/api/mcp/asset/31e9ddc0-6e2e-4f66-b607-333d68e97fa4/3dc51.png" alt="Technology">
+          <h3>Technology</h3>
+          <p>Learning new tools and exploring what they can do.</p>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact section" id="contact">
-      <div class="contact-card">
-        <span class="contact-kicker">LET'S CONNECT</span>
+      <div class="contact-box">
+        <p class="contact-label">LET'S CONNECT</p>
         <h2>Have an idea?<br>Let's create something.</h2>
         <p>I'm always interested in learning, creating, and exploring new ideas.</p>
 
-        <form id="contactForm" class="contact-form">
-          <div class="form-grid">
-            <label>Name<input id="name" name="name" type="text" autocomplete="name" required></label>
-            <label>Email<input id="email" name="email" type="email" autocomplete="email" required></label>
+        <form id="contactForm">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
           </div>
-          <label>Message<textarea id="message" name="message" rows="4" required></textarea></label>
-          <button class="button button-on-accent" type="submit">Send Message →</button>
-          <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="send-button">Send Message →</button>
+          <p id="formMessage" class="form-message"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="brand" href="#home">XANDER<span>.</span></a>
-    <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">XANDER<span>.</span></a>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
     <p>Designed by Xander Jhay Lelia · © 2026</p>
   </footer>
 
-
-  <div class="project-modal" id="projectModal" hidden aria-hidden="true">
-    <div class="project-modal-backdrop" data-close-modal></div>
-    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
-      <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
-      <span class="project-modal-kicker" id="projectModalKicker"></span>
-      <h2 id="projectModalTitle"></h2>
-      <p id="projectModalText"></p>
-      <a class="button" href="#contact" id="projectModalContact">Let's Talk About It →</a>
-    </div>
-  </div>
-
-  <script src="script.js" defer></script>
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
